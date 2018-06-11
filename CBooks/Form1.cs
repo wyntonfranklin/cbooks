@@ -12,19 +12,24 @@ namespace CBooks
 {
     public partial class Form1 : Form
     {
-        List<Books> books = new List<Books>();
 
         public Form1()
         {
             InitializeComponent();
             Books bk = new Books("hello");
-            books.Add(bk);
-            booksList.DataSource = books;
+            BookAdapter.AddBook(bk);
+            booksList.DataSource = BookAdapter.GetAllBooks();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void booksList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Books bk = (Books)booksList.SelectedItem;
+            Console.WriteLine(bk.title);
         }
     }
 }

@@ -30,5 +30,10 @@ namespace CBooks
             title = bookName;
         }
 
+        public override string ToString()
+        {
+            return title;
+        }
+
     }
 }
