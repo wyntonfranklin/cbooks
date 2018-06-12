@@ -9,30 +9,41 @@ namespace CBooks
     class Books
     {
         public int Id { get; set; }
-        public String title { get; set; }
-        private int pages { get; set; }
-        private int sections { get; set; }
-        private String description { get; set; }
+        public String Title { get; set; }
+        private int Pages { get; set; }
+        private int Sections { get; set; }
+        public string description;
+
+        private string GetDescription()
+        {
+            return description;
+        }
+
+        private void SetDescription(string value)
+        {
+            description = value;
+        }
 
         public Books()
         {
 
         }
 
+
         public Books(String bookName)
         {
-            title = bookName;
+            Title = bookName;
         }
 
         public Books(int book_id, String bookName)
         {
             Id = book_id;
-            title = bookName;
+            Title = bookName;
         }
 
         public override string ToString()
         {
-            return title;
+            return Title;
         }
 
     }

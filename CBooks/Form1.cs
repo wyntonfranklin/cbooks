@@ -23,13 +23,28 @@ namespace CBooks
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            Form2 fm = new Form2(this);
+            fm.ShowDialog();
         }
 
         private void booksList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Books bk = (Books)booksList.SelectedItem;
-            Console.WriteLine(bk.title);
+           // Books bk = (Books)booksList.SelectedItem;
+          //  Console.WriteLine(bk.title);
+        }
+
+        public void updateList()
+        {
+            booksList.DataSource = null;
+            booksList.Items.Clear();
+            booksList.DataSource = BookAdapter.GetAllBooks();
+  
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AddPage pgForm = new AddPage();
+            pgForm.ShowDialog();
         }
     }
 }

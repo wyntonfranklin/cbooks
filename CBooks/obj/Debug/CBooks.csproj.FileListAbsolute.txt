@@ -1,10 +1,10 @@
 C:\Users\Administrator\source\repos\CBooks\CBooks\bin\Debug\CBooks.exe.config
 C:\Users\Administrator\source\repos\CBooks\CBooks\bin\Debug\CBooks.exe
 C:\Users\Administrator\source\repos\CBooks\CBooks\bin\Debug\CBooks.pdb
-C:\Users\Administrator\source\repos\CBooks\CBooks\obj\Debug\CBooks.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\CBooks\CBooks\obj\Debug\CBooks.Form1.resources
+C:\Users\Administrator\source\repos\CBooks\CBooks\obj\Debug\CBooks.Form2.resources
 C:\Users\Administrator\source\repos\CBooks\CBooks\obj\Debug\CBooks.Properties.Resources.resources
 C:\Users\Administrator\source\repos\CBooks\CBooks\obj\Debug\CBooks.csproj.GenerateResource.cache
 C:\Users\Administrator\source\repos\CBooks\CBooks\obj\Debug\CBooks.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\source\repos\CBooks\CBooks\obj\Debug\CBooks.exe
 C:\Users\Administrator\source\repos\CBooks\CBooks\obj\Debug\CBooks.pdb
-C:\Users\Administrator\source\repos\CBooks\CBooks\obj\Debug\CBooks.Form1.resources
