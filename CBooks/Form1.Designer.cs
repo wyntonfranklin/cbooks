@@ -76,6 +76,7 @@
             this.pagesList.Name = "pagesList";
             this.pagesList.Size = new System.Drawing.Size(120, 316);
             this.pagesList.TabIndex = 12;
+            this.pagesList.DoubleClick += new System.EventHandler(this.pagesList_DoubleClick);
             // 
             // booksList
             // 
@@ -85,6 +86,7 @@
             this.booksList.Size = new System.Drawing.Size(120, 316);
             this.booksList.TabIndex = 11;
             this.booksList.SelectedIndexChanged += new System.EventHandler(this.booksList_SelectedIndexChanged);
+            this.booksList.DoubleClick += new System.EventHandler(this.booksList_DoubleClick);
             // 
             // label4
             // 
@@ -165,6 +167,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Save Page";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
             // menuStrip1
             // 

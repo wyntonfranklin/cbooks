@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace CBooks
 {
-    class Books
+    public class Books
     {
         public int Id { get; set; }
         public String Title { get; set; }
         private int Pages { get; set; }
         private int Sections { get; set; }
         public string description;
+        public List<Pages> pg = new List<Pages>();
+
 
         private string GetDescription()
         {
@@ -44,6 +46,16 @@ namespace CBooks
         public override string ToString()
         {
             return Title;
+        }
+
+        public void addPage(Pages page)
+        {
+            pg.Add(page);
+        }
+
+        public List<Pages> getAllPages()
+        {
+            return pg;
         }
 
     }

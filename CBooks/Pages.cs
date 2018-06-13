@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace CBooks
 {
-    class Pages
+    public class Pages
     {
-        private String title { get; set; }
-        private String content { get; set; }
-        private int wordCount { get; set; }
-        private int currentLine { get; set; }
+        public String Title { get; set; }
+        public String Content { get; set; }
+        private int WordCount { get; set; }
+        private int CurrentLine { get; set; }
 
 
         public Pages()
@@ -21,7 +21,12 @@ namespace CBooks
 
         public Pages(String pageName)
         {
-            title = pageName;
+            Title = pageName;
+        }
+
+        public override string ToString()
+        {
+            return Title;
         }
     }
 }

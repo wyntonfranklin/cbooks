@@ -8,3 +8,5 @@ C:\Users\Administrator\source\repos\CBooks\CBooks\obj\Debug\CBooks.csproj.Genera
 C:\Users\Administrator\source\repos\CBooks\CBooks\obj\Debug\CBooks.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\source\repos\CBooks\CBooks\obj\Debug\CBooks.exe
 C:\Users\Administrator\source\repos\CBooks\CBooks\obj\Debug\CBooks.pdb
+C:\Users\Administrator\source\repos\CBooks\CBooks\obj\Debug\CBooks.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\CBooks\CBooks\obj\Debug\CBooks.AddPage.resources
