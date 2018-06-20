@@ -14,6 +14,7 @@ namespace CBooks
     {
         private Books currentBook;
         private Pages currentPage;
+        private FolderBrowserDialog folderBrowserDialog1;
 
         public Form1()
         {
@@ -23,6 +24,7 @@ namespace CBooks
             bk.addPage(pg);
             BookAdapter.AddBook(bk);
             updateList();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -98,14 +100,6 @@ namespace CBooks
 
         }
 
-        private void button1_MouseClick(object sender, MouseEventArgs e)
-        {
-            if(currentPage != null)
-            {
-                currentPage.Title = pageTitleBox.Text;
-                currentPage.Content = pageContentBox.Text;
-            }
-        }
 
         public Pages getCurrentPage()
         {
@@ -116,5 +110,32 @@ namespace CBooks
         {
             return currentBook;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (currentPage != null)
+            {
+                currentPage.Title = pageTitleBox.Text;
+                currentPage.Content = pageContentBox.Text;
+            }
+            else
+            {
+                MessageBox.Show("No Page Selected");
+            }
+        }
+
+        public void ChooseFolder()
+        {
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                //textBox1.Text = folderBrowserDialog1.SelectedPath;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ChooseFolder();
+        }
     }
+
 }

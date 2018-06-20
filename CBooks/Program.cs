@@ -16,8 +16,9 @@ namespace CBooks
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-            Books bk = new Books();
+            Form app = new Form1();
+            app.Text = "Books Application";
+            Application.Run(app);
         }
     }
 }
